@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Proje</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+
+            </div>
+            <ul>
+                <li><a href="#">anasayfa</a></li>
+                <li><a href="https://tr.wikipedia.org/wiki/HTML">html</a></li>
+                <li><a href="https://tr.wikipedia.org/wiki/CSS">Css</a></li>
+                <li><a href="https://tr.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+                <li><a href="https://tr.wikipedia.org/wiki/C%E2%99%AF">c#</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Arama Yapınız!">
+                <button onclick="search()">Ara</button>
+            </div>
+            <script>
+                function search() {
+                    var searchText = document.getElementById("searchInput").value;
+                    if (searchText.trim() !== "") {
+                        // Arama metnini kullanarak bir URL oluştur
+                        var searchUrl = "https://www.google.com/search?q=" + encodeURIComponent(searchText);
+                        // Oluşturulan URL'e yönlendir
+                        window.location.href = searchUrl;
+                    }
+                }
+            </script>
+
+        </nav>
+    </header>
+    <div class="container">
+        <h1>yazılım dilleri</h1>
+        <div class="main">
+
+            <div class="menu1">
+
+                <a href="https://tr.wikipedia.org/wiki/HTML">
+                    <img src="images/html-img.png" alt="">
+                </a>
+
+                <h2>Html</h2>
+
+                <p>Hiper Metin İşaretleme Dili web sayfalarını oluşturmak için kullanılan standart metin işaretleme
+                    dilidir. Dilin son sürümü HTML5'tir. HTML, bir programlama dili olarak tanımlanamaz. Çünkü HTML
+                    kodlarıyla kendi başına çalışan bir program yazılamaz.
+                </p>
+
+            </div>
+            <div class="menu2">
+                <a href="https://tr.wikipedia.org/wiki/CSS">
+                    <img src="images/css-img.png" alt="">
+                </a>
+
+                <h2>css</h2>
+
+                <p>Cascading Style Sheets, HTML'e ek olarak metin ve format biçimlendirme alanında fazladan olanaklar
+                    sunan bir işaretleme dilidir.
+                </p>
+            </div>
+            <div class="menu3">
+                <a href="https://tr.wikipedia.org/wiki/JavaScript">
+                    <img src="images/js-img.png" alt="">
+                </a>
+
+                <h2>JavaScript</h2>
+
+                <p>JavaScript, HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama
+                    dilidir. Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında
+                    JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir
+                </p>
+            </div>
+            <div class="menu4">
+                <a href="https://tr.wikipedia.org/wiki/C%E2%99%AF">
+                    <img src="images/c-sharp-img.png" alt="">
+                </a>
+
+                <h2>C Sharp C#</h2>
+
+                <p>C#; Microsoft tarafından .NET Teknolojisi için geliştirilen modern bir programlama dilidir. Sözdizimi
+                    C-like bir deneyim sunar. Microsoft tarafından geliştirilmiş olsa da ECMA ve ISO standartları altına
+                    alınmıştır. C programlama dilinde bir tam sayı değişkeni 1 artırmak için değişkenden sonra "++" eki
+                    kullanılır.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <!-- <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <path id="blob" d="M430.5,347Q362,444,263,422Q164,400,142.5,325Q121,250,142.5,176Q164,102,257.5,88Q351,74,425,162Q499,250,430.5,347Z" fill="#d1d8e0"></path>
+      </svg> -->
+    <div class="vraper">
+        <a href="#">
+            <img src="images/mail.gif" alt="">
+        </a>
+    </div>
+
+</body>
+
+</html>
